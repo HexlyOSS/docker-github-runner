@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
     runner:
-      image: tcardonne/github-runner
+      image: hexly/github-compose-runner
       environment:
         RUNNER_NAME: "my-runner"
         RUNNER_REPOSITORY_URL: ${RUNNER_REPOSITORY_URL}

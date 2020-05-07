@@ -15,8 +15,8 @@ LABEL maintainer="me@tcardonne.fr" \
     org.label-schema.vcs-ref=$VCS_REF \
     org.label-schema.name="tcardonne/github-runner" \
     org.label-schema.description="Dockerized GitHub Actions runner." \
-    org.label-schema.url="https://github.com/tcardonne/docker-github-runner" \
-    org.label-schema.vcs-url="https://github.com/tcardonne/docker-github-runner" \
+    org.label-schema.url="git@github.com:HexlyOSS/docker-github-runner.git" \
+    org.label-schema.vcs-url="git@github.com:HexlyOSS/docker-github-runner.git" \
     org.label-schema.vendor="Thomas Cardonne" \
     org.label-schema.docker.cmd="docker run -it tcardonne/github-runner:latest"
 
@@ -29,7 +29,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
         software-properties-common \
         git \
         sudo \
-        supervisor
+        supervisor \
+        jq
 
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 RUN chmod 644 /etc/supervisor/conf.d/supervisord.conf

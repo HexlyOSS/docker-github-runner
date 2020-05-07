@@ -1,8 +1,14 @@
 # GitHub Runner
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/tcardonne/github-runner)](https://hub.docker.com/r/tcardonne/github-runner)
+-----------
+
+# Important: Credit where credit is Due
+Forked from [Thomas Cardonne](https://github.com/tcardonne)'s [github-runner](https://hub.docker.com/r/tcardonne/github-runner). We just want to build from source for keeping with best practices
 
 -----------
+
+# Original Readme
+
 GitHub allows developers to run GitHub Actions workflows on your own runners.
 This Docker image allows you to create your own runners on Docker.
 
